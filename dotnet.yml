@@ -1,6 +1,7 @@
 ---
 - name: Install Java, .NET, and Node.js
   hosts: all
+  become: yes
   tasks:
   - name: Install Java
     become: yes
