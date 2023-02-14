@@ -1,0 +1,11 @@
+manual steps tomcat
+
+java install
+   sudo apt update
+   sudo apt install java 
+   java -version
+creating user 
+       adduser  /opt/tomcat -s /bin/false tomcat
+download 
+   
+   
