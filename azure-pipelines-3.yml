@@ -4,9 +4,9 @@
 # https://aka.ms/yaml
 
 ---
- pool: 
- name: default
+pool: 
+name: default
  
- steps:
-    -tasks
-       printerenv
+steps:
+  -tasks
+     printerenv
