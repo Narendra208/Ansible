@@ -4,7 +4,8 @@
 # https://aka.ms/yaml
 
 ---
- pool: default
+ pool: 
+ name: default
  
  steps:
     - set
