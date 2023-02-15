@@ -7,4 +7,4 @@
  pool: default
  
  steps:
-   -printerenv
+   - printerenv
