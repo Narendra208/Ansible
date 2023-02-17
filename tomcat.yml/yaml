@@ -1,0 +1,17 @@
+---
+- movies:
+- movie_name:  
+    movie director: lokesh
+    music director: anirudh
+    hero name: vijay 
+    production name: dvv
+- cast:
+    vijay
+    trisha  
+- movie_name: 
+    movie director: atluri
+    hero: dhanush 
+    production: sitara ent
+- cast:
+    dhanush
+    shamukhtha
