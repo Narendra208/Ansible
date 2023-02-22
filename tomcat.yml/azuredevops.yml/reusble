@@ -1,0 +1,52 @@
+---
+ pool:
+ name: default
+
+ trigger: 
+     - main
+
+ parameters:
+     - name: install maven
+       displayname: install maven
+       type: string
+       default: 'package'
+     - name: pomfile
+       displayname: pomfile
+       type: string
+       default: 'pom.xml'
+     - name: install java
+       displayname: jdk version
+       type: string
+       default: 'java-17-openjdk'
+     -  name: javapath
+        displayname: javadirectory
+        type: string
+        default: '/usr/lib/jvm/java-17-openjdk-amd64'
+     -  name: maven path
+        displayname: mavenpath
+        type: string
+        default: 'path'
+     -  name: maven directory
+        displayname: mvndirec
+        type: string
+        default: '/usr/share/maven'        
+       
+       
+     
+
+      
+
+
+
+
+
+  steps:  
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        javaHomeOption: 'path'
+        jdkDirectory:  /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+        goals: 'package'
+        mavenVersionOption: 'path'
+        mavenDirectory: /usr/share/maven    
